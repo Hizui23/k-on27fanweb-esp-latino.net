@@ -435,17 +435,44 @@ footer {
         height: auto; /* Mantiene la proporción */
     }
 
+
+/* Estilos generales para el elemento #proxCAP */
+#proxCAP {
+  /* Establece margen superior e inferior */
+  margin: 20px 0;
+  /* Centra el texto horizontalmente */
+  text-align: center;
 }
 
-#proxCAP {text-align: center;}
+/* Estilos para el texto dentro de #proxCAP */
 #proxCAP h3 {
-  font-size: 32px; /* tamaño por defecto para PC */
+  /* Tamaño base de fuente para escritorio */
+  font-size: 2rem;
+  /* Peso de la fuente en negrita */
+  font-weight: bold;
 }
 
-/* para pantallas pequeñas (celulares) */
-@media (max-width: 768px) 
+/* --- Adaptación para pantallas móviles --- */
+/*
+  Este bloque ajusta el tamaño del elemento y de la fuente
+  para que se mantenga fácilmente legible en dispositivos móviles.
+*/
+@media (max-width: 600px) {
   #proxCAP h3 {
-    font-size: 20px;
+    /* Aumenta el tamaño de la fuente en móvil */
+    font-size: 2.2rem;
+    /*
+      Puedes ajustar este valor según prefieras.
+      Usar unidades relativas (rem) asegura mejor escalabilidad.
+    */
+    /* Opcional: Añade espacio extra si lo necesitas */
+    padding: 12px;
   }
+  #proxCAP {
+    /* Opcional: Ajusta el margen en móviles */
+    margin: 16px 0;
+  }
+}
+
 
 
