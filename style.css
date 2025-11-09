@@ -439,5 +439,13 @@ footer {
 
 #proxCAP {text-align: center;}
 #proxCAP h3 {
-  font-size: 2vw; /* se adapta al tamaño de la pantalla */
+  font-size: 32px; /* tamaño por defecto para PC */
 }
+
+/* para pantallas pequeñas (celulares) */
+@media (max-width: 768px) 
+  #proxCAP h3 {
+    font-size: 20px;
+  }
+
+
